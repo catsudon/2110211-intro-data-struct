@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+using namespace std;template<class T>vector<T>Union(const vector<T>&A,const vector<T>&B){vector<T>v;map<T,bool> mp;for(auto it:A){mp[it]=1;v.push_back(it);}for(auto it:B)if(mp.find(it)==mp.end())v.push_back(it);return v;}template<class T>vector<T>Intersect(const vector<T>&A,const vector<T>&B){vector<T>v;map<T,bool>mp;for(auto it:B)mp[it]=1;for(auto it:A)if(mp.find(it)!=mp.end())v.push_back(it);return v;}

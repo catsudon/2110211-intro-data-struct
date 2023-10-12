@@ -1,0 +1,1 @@
+template<typename T>void CP::vector<T>::insert(T*p,T*f,T*l){T*v=new T[mSize+(l-f)]();int c=0;for(auto i=mData;i<p;++i)v[c++]=*i;for(;f<l;++f)v[c++]=*f;for(auto i=p;i<end();++i)v[c++]=*i;mData=v,mSize=c;}

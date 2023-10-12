@@ -1,0 +1,1 @@
+template<class T>int CP::stack<T>::compare_reserve(const stack&o)const{int a=mCap-mSize,b=o.mCap-o.mSize;return a<b?-1:a>b;}

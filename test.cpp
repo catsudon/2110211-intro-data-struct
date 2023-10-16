@@ -3,11 +3,19 @@
 using namespace std;
 
 int main() {
-    int *mData = new int[10]();
-    for(int i=0;i<10;++i) mData[i] = i*10;
+    // int *mData = new int[10]();
+    // for(int i=0;i<10;++i) mData[i] = i*10;
 
-    int *kuy = mData;
-    *kuy = 3;
-    cout << mData[0];
+    // int *kuy = mData;
+    // *kuy = 3;
+    // cout << mData[0];
 
+    queue<int> q;
+    q.push(1);
+    q.push(1);
+    q.push(1);
+    q.push(1);
+    q.push(1);
+    q.push(1);
+    q.push(1);
 }

@@ -123,19 +123,17 @@ class priority_queue
     }
 
     void erase(const T& v) {
-      //erase v from the heap (if exists)
-      //write your code here
       int found = -1;
-      for(int i=0;i<mSize;++i) {
+      for(int i=0;i<mSize;++i) 
         if(mData[i] == v) {found=i; break;}
-      }
-
+      
       if(-1==found) return;
       
       
-        swap(mData[found], mData[mSize-1]);
-        mSize--;
-        fixDown(found);
+      swap(mData[found], mData[mSize-1]);
+      mSize--;
+      fixDown(found);
+      fixUp(found);
       
 
     //     cout << "\n\n";

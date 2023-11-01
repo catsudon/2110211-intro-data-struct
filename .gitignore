@@ -1,5 +1,5 @@
 *
-!/**/
+!*/
 !*.*
 
 # Byte-compiled / optimized / DLL files
@@ -9,6 +9,9 @@ __pycache__/
 
 # C extensions
 *.so
+*.o
+*.exe
+
 
 # Distribution / packaging
 .Python

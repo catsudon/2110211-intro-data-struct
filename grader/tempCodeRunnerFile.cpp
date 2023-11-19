@@ -1,2 +1,1 @@
-
-        cerr << " :  " << firsttime << " " << l << " " << r << 
+ptr
